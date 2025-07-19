@@ -41,6 +41,9 @@ export default {
       darkGrey: "#3f4441",
     },
     extend: {
+      dropShadow: {
+        glow: "0 0 10px rgba(255, 170, 0, 1)",
+      },
       boxShadow: {
         cyanShadow: "0px 0px 20px 0px rgba(94, 206, 220, 0.5)",
         cyanBigShadow: "10px 10px 1000px 500px rgba(94, 206, 220, 0.3)",

@@ -1,65 +1,74 @@
-import ProjectsText from "./ProjectsText";
-import SingleProject from "./SingleProject";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../framerMotion/variants";
+import { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
+import ProjectCard from "./ProjectCard";
+import { projects } from "./projectData";
+import CertificateSection from "../CertificateSection/CertificateSection";
 
-const projects = [
-  {
-    name: "Vacation of Africa",
-    year: "Mar2022",
-    align: "right",
-    image: "../../public/images/website-img-1.jpg",
-    link: "#",
-  },
-  {
-    name: "Moola App",
-    year: "Sept2022",
-    align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "#",
-  },
-  {
-    name: "Tourzania",
-    year: "Jan2023",
-    align: "right",
-    image: "../../public/images/website-img-3.jpg",
-    link: "#",
-  },
-  {
-    name: "Bank of Luck",
-    year: "May2024",
-    align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
-  },
-];
+const ProjectSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { threshold: 0.3 });
+  const controls = useAnimation();
 
-const ProjectsMain = () => {
+  useEffect(() => {
+    if (isInView) {
+      controls.start({ opacity: 1, y: 0 });
+    } else {
+      controls.start({ opacity: 0, y: 50 });
+    }
+  }, [isInView, controls]);
+
   return (
-    <div id="projects" className="max-w-[1200px] mx-auto px-4">
-      <motion.div
-        variants={fadeIn("top", 0)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
-      >
-        <ProjectsText />
-      </motion.div>
-      <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
-        {projects.map((project, index) => {
-          return (
-            <SingleProject
-              key={index}
-              name={project.name}
-              year={project.year}
-              align={project.align}
-              image={project.image}
-            />
-          );
-        })}
+    <section id="projects">
+      <div className="py-20 px-6 bg-gradient-to-b from-[#221a17] via-[#1c1a18] to-[#0f0d0a] text-white">
+        <div className="max-w-6xl mx-auto text-center">
+          {/* Heading */}
+          <motion.h2
+            className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-500 mb-6"
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            My Projects
+          </motion.h2>
+
+          {/* Subtext */}
+          <motion.p
+            className="text-lg text-lightGrey max-w-3xl mx-auto mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            Each project I’ve built is a testament to my passion for crafting
+            seamless and visually engaging user interfaces, writing clean and
+            scalable code, and approaching every challenge with a
+            problem-solving mindset. Whether it’s building full-stack
+            applications or interactive websites, I strive to deliver
+            experiences that are both functional and aesthetically refined.
+          </motion.p>
+
+          {/* Project Cards Grid */}
+          <motion.div
+            className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                project={project}
+                tiltDirection={index % 2 === 0 ? "right" : "left"}
+              />
+            ))}
+          </motion.div>
+        </div>
       </div>
-    </div>
+      <CertificateSection />
+    </section>
   );
 };
 
-export default ProjectsMain;
+export default ProjectSection;

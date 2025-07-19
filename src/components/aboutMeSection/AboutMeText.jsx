@@ -3,28 +3,33 @@ import { Link } from "react-scroll";
 const AboutMeText = () => {
   return (
     <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center">
-      <h2 className="text-6xl text-cyan mb-10">About Me</h2>
-      <p>
-        I’m Abdelrahman, a web developer instructor with a passion for teaching
-        and coding. I specialize in React and front-end development, helping
-        students build real-world projects and master modern web technologies. I
-        also run a YouTube channel, CodeNest, where I create tutorials and
-        courses to guide aspiring developers in their journey toward successful
-        careers in tech. Outside of coding, I enjoy continuous learning and
-        sharing knowledge to inspire others to achieve their goals.
+      <h2 className="text-4xl md:text-5xl font-bold text-orange mb-6 uppercase tracking-wide">
+        Hello, I’m Kaustubh
+      </h2>
+
+      <p className="text-lg text-lightGrey leading-relaxed max-w-xl">
+        A Computer Engineering graduate (2025) passionate about crafting
+        scalable, user-centric web applications using the MERN stack. I’ve
+        worked on real-world projects like a QR-based hotel menu, e-learning
+        platforms, and a real-time chat app. I'm also exploring data analysis
+        with Python, Excel, and Power BI to bring insights to life.
+        <br />
+        <br />
+        I'm driven by clean code, intuitive UX, and continuous learning. Open to
+        full-time opportunities, freelance gigs, and collaborative challenges in
+        the tech space.
       </p>
-      <button className="border border-orange rounded-full py-2 px-4 text-lg flex gap-2 items-center mt-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start sm:self-center">
-        <Link
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={-120}
-          to="projects"
-          className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
-        >
-          My Projects
-        </Link>
-      </button>
+
+      <Link
+        to="education"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-120}
+        className="mt-8 inline-block bg-orange text-white px-6 py-2 rounded-full font-semibold text-lg shadow-md hover:bg-white hover:text-orange transition-all duration-300 cursor-pointer"
+      >
+        View Education Details
+      </Link>
     </div>
   );
 };

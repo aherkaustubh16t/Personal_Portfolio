@@ -1,0 +1,8 @@
+.active {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.active + .active-underline {
+  @apply w-full;
+}

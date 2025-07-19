@@ -1,11 +1,14 @@
 const NavbarLogo = () => {
   return (
     <div>
-      <h1 className="text-white  text-2xl sm:hidden md:block">
-        Abdelrahman Qassem
+      {/* Full name on medium and larger screens */}
+      <h1 className="text-white text-4xl font-['Playfair_Display'] font-extrabold italic tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 to-cyan-400 drop-shadow-[0_3px_6px_rgba(255,255,255,0.25)] sm:hidden md:block">
+        Kaustubh Aher
       </h1>
-      <h1 className="text-white font-special font-extrabold text-4xl md:hidden sm:block">
-        AQ
+
+      {/* Fancy KA for small screens */}
+      <h1 className="text-4xl font-['Playfair_Display'] font-extrabold italic tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 to-cyan-400 drop-shadow-[0_3px_6px_rgba(255,255,255,0.25)] md:hidden sm:block">
+        KA
       </h1>
     </div>
   );

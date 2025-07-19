@@ -1,9 +1,40 @@
+import Marquee from "react-fast-marquee";
+import {
+  FaBolt,
+  FaUsers,
+  FaSearch,
+  FaLightbulb,
+  FaBrain,
+  FaCogs,
+  FaLaptopCode,
+} from "react-icons/fa";
+
+const qualities = [
+  { label: "Fast Learner", icon: <FaBolt /> },
+  { label: "Team Player", icon: <FaUsers /> },
+  { label: "Detail Oriented", icon: <FaSearch /> },
+  { label: "Creative Thinker", icon: <FaLightbulb /> },
+  { label: "Problem Solver", icon: <FaBrain /> },
+  { label: "Adaptable", icon: <FaCogs /> },
+  { label: "Tech Enthusiast", icon: <FaLaptopCode /> },
+];
+
 const SubHeroMain = () => {
   return (
-    <div className="w-full border-y bg-brown border-lightGrey text-lightGrey flex justify-around uppercase xl:text-4xl md:text-2xl sm:text-4xl py-8 md:flex-row sm:flex-col items-center gap-4">
-      <p className="md:block sm:hidden">Fast Learner</p>
-      <p className="md:block sm:hidden">Team Work</p>
-      <p>Details Master</p>
+    <div className="w-full border-y border-lightGrey bg-brown text-lightGrey py-3 overflow-hidden">
+      <Marquee speed={50} gradient={false} pauseOnHover={true}>
+        {qualities.map((item, index) => (
+          <div
+            key={index}
+            className="bg-brown border border-orange/30 rounded-xl shadow-inner text-center mx-3 min-w-[160px] p-3 flex flex-col items-center justify-center transition duration-300 ease-in-out"
+          >
+            <span className="text-orange text-2xl mb-2">{item.icon}</span>
+            <p className="text-lightGrey text-xs sm:text-sm md:text-base uppercase tracking-wide font-medium">
+              {item.label}
+            </p>
+          </div>
+        ))}
+      </Marquee>
     </div>
   );
 };

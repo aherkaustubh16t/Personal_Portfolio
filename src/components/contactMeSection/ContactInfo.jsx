@@ -6,9 +6,23 @@ import SingleInfo from "./SingleInfo";
 const ContactInfo = () => {
   return (
     <div className="flex flex-col gap-4">
+      {/* Email - plain text (not clickable) */}
       <SingleInfo text="abdelrahman.qassem@gmail.com" Image={HiOutlineMail} />
-      <SingleInfo text="+2 01000 66 24 55" Image={FiPhone} />
-      <SingleInfo text="Alexandria, Egypt" Image={IoLocationOutline} />
+
+      {/* Phone - tel link */}
+      <a href="tel:+917249734437" className="hover:text-orange">
+        <SingleInfo text="+91 7249734437" Image={FiPhone} />
+      </a>
+
+      {/* Location - Google Maps link */}
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Loni"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-orange"
+      >
+        <SingleInfo text="Loni" Image={IoLocationOutline} />
+      </a>
     </div>
   );
 };

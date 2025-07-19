@@ -14,34 +14,50 @@ const skills = [
   {
     skill: "HTML",
     icon: FaHtml5,
+    level: 5,
+    tooltip: "Semantic markup and structuring",
   },
   {
     skill: "CSS",
     icon: FaCss3Alt,
+    level: 4,
+    tooltip: "Flexbox, Grid, Animations",
   },
   {
     skill: "JavaScript",
     icon: IoLogoJavascript,
+    level: 5,
+    tooltip: "ES6+, DOM, async programming",
   },
   {
     skill: "TypeScript",
     icon: SiTypescript,
+    level: 4,
+    tooltip: "Static typing, interfaces, generics",
   },
   {
     skill: "ReactJS",
     icon: FaReact,
+    level: 5,
+    tooltip: "Hooks, JSX, component-driven UI",
   },
   {
     skill: "Redux",
     icon: SiRedux,
+    level: 4,
+    tooltip: "State management with Redux Toolkit",
   },
   {
     skill: "NextJS",
     icon: SiNextdotjs,
+    level: 4,
+    tooltip: "SSR, file-based routing, API routes",
   },
   {
     skill: "TailwindCSS",
     icon: RiTailwindCssFill,
+    level: 5,
+    tooltip: "Utility-first responsive design",
   },
 ];
 
@@ -62,6 +78,8 @@ const AllSkills = () => {
                 key={index}
                 text={item.skill}
                 imgSvg={<item.icon />}
+                level={item.level}
+                tooltip={item.tooltip}
               />
             </motion.div>
           );
