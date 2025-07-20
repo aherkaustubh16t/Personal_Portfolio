@@ -5,7 +5,7 @@ export const certificates = [
     date: "January 17, 2025",
     platform: "Coursera",
     link: "https://coursera.org/verify/WBL4STTGGAHF",
-    image: "../../../public/images/Certificates/Coursera.png",
+    image: "/images/Certificates/Coursera.png",
   },
   {
     title: "Introduction to Java",
@@ -13,7 +13,7 @@ export const certificates = [
     date: "January 17, 2025",
     platform: "Coursera",
     link: "https://coursera.org/verify/VE9EK49U0I9P",
-    image: "../../../public/images/Certificates/Coursera.png",
+    image: "/images/Certificates/Coursera.png",
   },
   {
     title: "Introduction to Object-Oriented Programming with Java",
@@ -21,7 +21,7 @@ export const certificates = [
     date: "January 17, 2025",
     platform: "Coursera",
     link: "https://coursera.org/verify/WNAAIZKORPCZ",
-    image: "../../../public/images/Certificates/Coursera.png",
+    image: "/images/Certificates/Coursera.png",
   },
   {
     title: "Backend Development and API Creation",
@@ -29,7 +29,7 @@ export const certificates = [
     date: "January 17, 2025",
     platform: "Coursera",
     link: "https://coursera.org/verify/PEK73T3CJN4S",
-    image: "../../../public/images/Certificates/Coursera.png",
+    image: "/images/Certificates/Coursera.png",
   },
   {
     title: "Spring MVC, Spring Boot and Rest Controllers",
@@ -37,7 +37,7 @@ export const certificates = [
     date: "January 20, 2025",
     platform: "Coursera",
     link: "https://coursera.org/verify/CR8U8G6GH1C1",
-    image: "../../../public/images/Certificates/Coursera.png",
+    image: "/images/Certificates/Coursera.png",
   },
   {
     title: "AWS Academy Introduction to Cloud - Semester 1",
@@ -45,7 +45,7 @@ export const certificates = [
     date: "September 13, 2024",
     platform: "Credly",
     link: "https://www.credly.com/go/1ynqu7G",
-    image: "../../../public/images/Certificates/AWSAcademy.png",
+    image: "/images/Certificates/AWSAcademy.png",
   },
   {
     title: "AWS Academy Introduction to Cloud - Semester 2",
@@ -53,7 +53,7 @@ export const certificates = [
     date: "September 13, 2024",
     platform: "Credly",
     link: "https://www.credly.com/go/W0KgQrB6",
-    image: "../../../public/images/Certificates/AWSAcademy.png",
+    image: "/images/Certificates/AWSAcademy.png",
   },
   {
     title: "AWS Cloud Practitioner Essentials",
@@ -61,7 +61,7 @@ export const certificates = [
     date: "January 20, 2025",
     platform: "Coursera",
     link: "https://coursera.org/verify/WE4P9K17QPS8",
-    image: "../../../public/images/Certificates/Coursera.png",
+    image: "/images/Certificates/Coursera.png",
   },
   {
     title: "Cloud Computing Basics (Cloud 101)",
@@ -69,7 +69,7 @@ export const certificates = [
     date: "September 16, 2022",
     platform: "Coursera",
     link: "https://coursera.org/verify/FX37TXR7TEXT",
-    image: "../../../public/images/Certificates/Coursera.png",
+    image: "/images/Certificates/Coursera.png",
   },
   {
     title: "Blockchain 101",
@@ -77,7 +77,7 @@ export const certificates = [
     date: "February 17, 2024",
     platform: "OnWingspan",
     link: "https://verify.onwingspan.com",
-    image: "../../../public/images/certificates/Infosys.png",
+    image: "/images/certificates/Infosys.png",
   },
   {
     title: "Blockchain in Depth",
@@ -85,6 +85,6 @@ export const certificates = [
     date: "March 2, 2024",
     platform: "OnWingspan",
     link: "https://verify.onwingspan.co",
-    image: "../../../public/images/certificates/Infosys.png",
+    image: "/images/certificates/Infosys.png",
   },
 ];
