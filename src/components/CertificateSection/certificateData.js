@@ -77,7 +77,7 @@ export const certificates = [
     date: "February 17, 2024",
     platform: "OnWingspan",
     link: "https://verify.onwingspan.com",
-    image: "/images/certificates/Infosys.png",
+    image: "/images/Certificates/Infosys.png",
   },
   {
     title: "Blockchain in Depth",
@@ -85,6 +85,6 @@ export const certificates = [
     date: "March 2, 2024",
     platform: "OnWingspan",
     link: "https://verify.onwingspan.co",
-    image: "/images/certificates/Infosys.png",
+    image: "/images/Certificates/Infosys.png",
   },
 ];
