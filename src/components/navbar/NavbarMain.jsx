@@ -15,7 +15,7 @@ const NavbarMain = () => {
           <NavbarLinks />
         </div>
         <NavbarBtn />
-        <div className="flex lg:hidden sm:block p-3 bg-black items-center justify-center rounded-full border border-orange">
+        <div className="ml-4 flex lg:hidden sm:block p-1 bg-orange items-center justify-center rounded-full border border-orange">
           <NavbarToggler />
         </div>
       </div>
