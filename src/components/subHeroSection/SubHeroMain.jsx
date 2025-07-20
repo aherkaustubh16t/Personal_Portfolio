@@ -21,15 +21,15 @@ const qualities = [
 
 const SubHeroMain = () => {
   return (
-    <div className="w-full border-y border-lightGrey bg-brown text-lightGrey py-3 overflow-hidden">
+    <div className="w-full border-y border-lightGrey bg-brown text-lightGrey py-3 overflow-hidden cursor-default">
       <Marquee speed={50} gradient={false} pauseOnHover={true}>
         {qualities.map((item, index) => (
           <div
             key={index}
-            className="bg-brown border border-orange/30 rounded-xl shadow-inner text-center mx-3 min-w-[160px] p-3 flex flex-col items-center justify-center transition duration-300 ease-in-out"
+            className="bg-black border border-orange/30 rounded-xl shadow-inner text-center mx-3 min-w-[160px] p-3 px-6 flex flex-row gap-2 items-center justify-center transition duration-300 ease-in-out"
           >
             <span className="text-orange text-2xl mb-2">{item.icon}</span>
-            <p className="text-lightGrey text-xs sm:text-sm md:text-base uppercase tracking-wide font-medium">
+            <p className="text-white text-xs sm:text-sm md:text-base uppercase tracking-wide font-medium">
               {item.label}
             </p>
           </div>

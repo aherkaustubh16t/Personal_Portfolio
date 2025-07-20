@@ -5,6 +5,8 @@ import {
   FaSchool,
 } from "react-icons/fa";
 import { educationData } from "./educationData";
+import { fadeIn } from "../../framerMotion/variants";
+import { motion } from "framer-motion";
 
 const iconMap = {
   FaGraduationCap: <FaGraduationCap className="text-4xl text-orange mt-1" />,
@@ -13,8 +15,15 @@ const iconMap = {
 
 const EducationDetails = () => {
   return (
-    <div className="mt-12" id="education">
-      <h3 className="text-3xl font-semibold text-orange uppercase mb-6 text-center">
+    <motion.div
+      id="education"
+      variants={fadeIn("up", 0.1)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.7 }}
+      className="mt-12"
+    >
+      <h3 className="text-3xl font-semibold text-orange uppercase mb-6 text-center font-customSerif">
         Education Details
       </h3>
 
@@ -39,7 +48,7 @@ const EducationDetails = () => {
           </div>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

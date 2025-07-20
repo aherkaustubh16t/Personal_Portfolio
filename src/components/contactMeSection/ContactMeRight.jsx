@@ -11,7 +11,7 @@ const ContactMeRight = () => {
         className="max-w-[300px]"
       />
       <ContactInfo />
-      <SocialLinks />
+      <SocialLinks showHireMe={false} />
     </div>
   );
 };

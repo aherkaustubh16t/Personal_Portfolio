@@ -3,9 +3,9 @@ import { FaUserTie, FaProjectDiagram } from "react-icons/fa";
 
 const experienceData = [
   {
-    title: "Web Development Intern",
-    company: "XYZ Tech Solutions",
-    period: "Jan 2024 – May 2024",
+    title: "Full Stack Developer Intern",
+    company: "SRW Softwares",
+    period: "Jan 2025 – May 2025",
     type: "Internship",
     icon: <FaUserTie />,
     description: [
@@ -18,7 +18,7 @@ const experienceData = [
   {
     title: "Freelance Full Stack Developer",
     company: "Sports Club Website",
-    period: "May 2024 – Jun 2024",
+    period: "March 2025 – April 2025",
     type: "Freelance Project",
     icon: <FaProjectDiagram />,
     description: [
@@ -39,10 +39,10 @@ const ExperienceSection = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* Title & Description Centered */}
-        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-500">
+        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-500 font-customSerif text-orange">
           Experience
         </h2>
-        <p className="text-lg text-lightGrey text-center max-w-3xl mx-auto mb-14">
+        <p className="text-lg text-white text-center max-w-3xl mx-auto mb-14">
           Here’s a glimpse of my journey—contributing to real-world projects
           through internships and delivering full-stack freelance solutions with
           focus on clean code, client needs, and on-time delivery.

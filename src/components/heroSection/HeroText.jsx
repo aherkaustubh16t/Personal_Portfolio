@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import { Typewriter } from "react-simple-typewriter";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { SiLeetcode, SiCodechef } from "react-icons/si";
 import SocialLinks from "./SocialLinks";
 
 const HeroText = () => {
@@ -14,7 +12,7 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="lg:text-2xl sm:text-xl uppercase text-lightGrey"
+        className="lg:text-2xl sm:text-xl uppercase text-white"
       >
         Hi, I'm
       </motion.h2>
@@ -25,7 +23,7 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="md:text-[2.8rem] lg:text-6xl sm:text-4xl text-orange font-bold uppercase"
+        className="md:text-[2.8rem] lg:text-6xl sm:text-4xl text-orange font-bold uppercase font-customSerif"
       >
         Kaustubh <br className="sm:hidden md:block" />
         Aher
@@ -72,7 +70,7 @@ const HeroText = () => {
         data analysis and visualization using Python, Excel, Power BI and
         PowerPoint
       </motion.p>
-      <SocialLinks />
+      <SocialLinks showHireMe={true} />
     </div>
   );
 };

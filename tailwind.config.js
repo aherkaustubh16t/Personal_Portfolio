@@ -55,6 +55,7 @@ export default {
     fontFamily: {
       body: ["Josefin Sans"],
       special: ['"Nunito"'],
+      customSerif: ['"Times New Roman"', 'serif'],
     },
   },
   plugins: [],

@@ -29,10 +29,10 @@ const DSASection = () => {
   return (
     <section
       ref={ref}
-      className="py-20 px-4 bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0a0a0a] text-white"
+      id="dsa"
+      className="py-16 px-4 bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0a0a0a] text-white"
     >
       <motion.div
-        id="dsa"
         initial="hidden"
         animate={controls}
         variants={{
@@ -41,11 +41,11 @@ const DSASection = () => {
         }}
         className="max-w-5xl mx-auto text-center"
       >
-        <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-500">
+        <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-500 font-customSerif text-orange">
           DSA & Competitive Coding
         </h2>
 
-        <p className="text-lg text-lightGrey mt-6 max-w-3xl mx-auto">
+        <p className="text-lg text-white mt-6 max-w-3xl mx-auto">
           I regularly practice Data Structures and Algorithms to strengthen my
           problem-solving skills. I've solved{" "}
           <span className="text-yellow-400 font-semibold">300+ problems</span>{" "}

@@ -1,11 +1,11 @@
 export const certificates = [
   {
     title: "React Frontend Developer",
-    issuer: "Coursera / Meta",
+    issuer: "Coursera",
     date: "June 2024",
     platform: "Coursera",
     link: "https://coursera.org/verify/sample",
-    image: "/certificates/react-cert.png",
+    image: "../../../public/images/skills.avif",
   },
   {
     title: "Backend Development with Node.js",
@@ -13,6 +13,6 @@ export const certificates = [
     date: "April 2024",
     platform: "Udemy",
     link: "https://udemy.com/certificate/sample",
-    image: "/certificates/node-cert.png",
+    image: "../../../public/images/skills.avif",
   },
 ];

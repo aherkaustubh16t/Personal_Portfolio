@@ -1,25 +1,14 @@
-import { motion, useAnimation, useInView } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 const SkillCard = ({ name, Icon, projectsUsed, delay, experience }) => {
   const [showExp, setShowExp] = useState(false);
-  const ref = useRef(null);
-  const inView = useInView(ref, { threshold: 0.2, triggerOnce: false });
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, scale: 1 });
-    } else {
-      controls.start({ opacity: 0, scale: 0.9 });
-    }
-  }, [inView, controls]);
 
   return (
     <motion.div
-      ref={ref}
-      animate={controls}
-      initial={{ opacity: 0, scale: 0.9 }}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ delay, duration: 0.5, ease: "easeOut" }}
       onMouseEnter={() => setShowExp(true)}
       onMouseLeave={() => setShowExp(false)}

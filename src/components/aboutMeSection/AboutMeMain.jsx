@@ -6,13 +6,13 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const AboutMeMain = () => {
   return (
-    <section id="about" className="py-20 px-4 bg-brown text-lightGrey">
+    <section className="py-16 px-4 bg-brown text-lightGrey">
       {/* Section Heading */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold uppercase text-orange tracking-wider">
+      <div className="text-center mb-12" id="about">
+        <h2 className="text-4xl font-bold uppercase text-orange tracking-wider font-customSerif">
           About Me
         </h2>
-        <p className="text-lg text-lightGrey mt-2">
+        <p className="text-lg text-white mt-2">
           Get to know me professionally and academically.
         </p>
       </div>
@@ -49,15 +49,8 @@ const AboutMeMain = () => {
       ></div>
 
       {/* Education Section */}
-      <motion.div
-        variants={fadeIn("up", 0.1)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
-        className="max-w-[800px] mx-auto"
-      >
-        <EducationDetails />
-      </motion.div>
+
+      <EducationDetails />
     </section>
   );
 };

@@ -3,11 +3,11 @@ import { Link } from "react-scroll";
 const AboutMeText = () => {
   return (
     <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center">
-      <h2 className="text-4xl md:text-5xl font-bold text-orange mb-6 uppercase tracking-wide">
+      <h2 className="text-4xl md:text-4xl font-bold text-orange mb-6 uppercase tracking-wide font-customSerif">
         Hello, I’m Kaustubh
       </h2>
 
-      <p className="text-lg text-lightGrey leading-relaxed max-w-xl">
+      <p className="text-lg text-white leading-relaxed max-w-xl">
         A Computer Engineering graduate (2025) passionate about crafting
         scalable, user-centric web applications using the MERN stack. I’ve
         worked on real-world projects like a QR-based hotel menu, e-learning
