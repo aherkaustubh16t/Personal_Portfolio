@@ -12,7 +12,7 @@ const SkillsMain = () => {
   };
 
   return (
-    <section className="py-16 text-white bg-gradient-to-br from-[#0f172a] via-[#1a1a1a] to-[#0d0d0d]">
+    <section className="py-16 text-white bg-gradient-to-br from-[#0f172a] via-[#1a1a1a] to-[#0d0d0d] cursor-default">
       <div className="max-w-6xl px-4 mx-auto" id="skills">
         <SkillsText />
 

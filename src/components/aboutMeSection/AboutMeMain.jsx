@@ -6,7 +6,7 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const AboutMeMain = () => {
   return (
-    <section className="py-16 px-4 bg-brown text-lightGrey">
+    <section className="py-16 px-4 bg-brown text-lightGrey cursor-default">
       {/* Section Heading */}
       <div className="text-center mb-12" id="about">
         <h2 className="text-4xl font-bold uppercase text-orange tracking-wider font-customSerif">

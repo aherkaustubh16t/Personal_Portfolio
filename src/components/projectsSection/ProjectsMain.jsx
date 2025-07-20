@@ -3,13 +3,15 @@ import { motion, useInView } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { projects } from "./projectData";
 import CertificateSection from "../CertificateSection/CertificateSection";
+import { FaGithub } from "react-icons/fa"; // Optional: GitHub icon
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { threshold: 0.3 });
 
   return (
-    <section id="projects">
+    <section id="projects" className="cursor-default">
       <div className="py-20 px-6 bg-gradient-to-b from-[#221a17] via-[#1c1a18] to-[#0f0d0a] text-white">
         <div className="max-w-6xl mx-auto text-center">
           {/* Heading */}
@@ -62,8 +64,23 @@ const ProjectSection = () => {
               </motion.div>
             ))}
           </motion.div>
+
+          {/* GitHub Button */}
+          <motion.a
+            href="https://github.com/aherkaustubh16t"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center font-bold gap-2 mt-12 px-6 py-3 rounded-full 
+    bg-orange/70 text-white text-lg transition-all duration-300 
+    hover:text-black hover:bg-white hover:drop-shadow-glow"
+          >
+            <FaGithub className="text-xl" />
+            See more on GitHub <FaExternalLinkAlt className="text-xs" />
+          </motion.a>
         </div>
       </div>
+
+      {/* Certificate Section */}
       <CertificateSection />
     </section>
   );

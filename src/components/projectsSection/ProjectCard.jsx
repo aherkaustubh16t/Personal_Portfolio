@@ -32,7 +32,9 @@ const ProjectCard = ({ project, tiltDirection = "right" }) => {
         className={`relative group rounded-xl bg-gradient-to-br from-[#1a1a1a]/80 via-[#1f1f1f]/80 to-[#141414]/80 
         border border-orange/30 shadow-[0_0_20px_rgba(255,165,0,0.05)] 
         hover:shadow-orange/40 transition-all duration-500 overflow-hidden 
-        transform ${tiltClass} hover:scale-[1.05] will-change-transform`}
+        transform ${
+          showDescription ? "" : `${tiltClass} hover:scale-[1.05]`
+        } will-change-transform`}
       >
         {/* Image Section */}
         <div className="relative w-full h-56 sm:h-64 md:h-72 lg:h-80 overflow-hidden">
@@ -40,25 +42,24 @@ const ProjectCard = ({ project, tiltDirection = "right" }) => {
             src={project.image}
             alt={project.name}
             className="w-full object-cover rounded-xl 
-             h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80"
+              h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80"
           />
 
           {/* Overlay Description */}
           <div
             className={`absolute inset-0 bg-black/60 backdrop-blur-md text-white text-sm sm:text-base text-center 
-            flex items-center justify-center px-4 py-2 transition-opacity duration-500 
-            ${
-              showDescription ? "opacity-100" : "opacity-0"
-            } group-hover:opacity-100`}
+              flex items-center justify-center px-4 py-2 transition-opacity duration-500 
+              ${
+                showDescription ? "opacity-100" : "opacity-0 scale-100"
+              } md:group-hover:opacity-100`}
           >
             {project.description}
           </div>
 
           {/* Mobile Toggle Button */}
           <button
-            className="md:hidden absolute bottom-3 right-3 bg-orange-500 text-black text-xs sm:text-sm px-3 py-1 rounded 
-              shadow-md font-semibold transition-transform duration-300 hover:scale-105"
-            onClick={() => setShowDescription(!showDescription)}
+            className="md:hidden absolute bottom-3 right-3 bg-white text-black text-xs sm:text-sm px-3 py-1 rounded shadow-md font-semibold transition-transform duration-300 hover:scale-105"
+            onClick={() => setShowDescription((prev) => !prev)}
           >
             {showDescription ? "Hide Details" : "View Details"}
           </button>
@@ -82,9 +83,9 @@ const ProjectCard = ({ project, tiltDirection = "right" }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 text-sm px-4 py-2 rounded-full 
-              bg-black/30 border border-cyan-500 text-cyan-300 
-              hover:bg-cyan-500 hover:text-black hover:shadow-cyanShadow 
-              transition-all duration-300 font-bold"
+                bg-black/30 border-2 hover:border-white
+                hover:text-black hover:bg-orange hover:shadow-cyanShadow 
+                transition-all duration-300 font-bold"
             >
               <FaGithub /> Code
             </a>
@@ -93,9 +94,9 @@ const ProjectCard = ({ project, tiltDirection = "right" }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 text-sm px-4 py-2 rounded-full 
-              bg-black/30 border border-orange-400 text-orange-300 
-              hover:bg-orange-400 hover:text-black hover:shadow-cyanShadow 
-              transition-all duration-300 font-bold"
+                bg-black/30 border-2 hover:border-white 
+                hover:bg-orange hover:text-black hover:shadow-cyanShadow 
+                transition-all duration-300 font-bold"
             >
               <FaExternalLinkAlt /> Live
             </a>

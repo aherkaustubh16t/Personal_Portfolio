@@ -30,7 +30,7 @@ const DSASection = () => {
     <section
       ref={ref}
       id="dsa"
-      className="py-16 px-4 bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0a0a0a] text-white"
+      className="py-16 px-4 bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0a0a0a] text-white cursor-default"
     >
       <motion.div
         initial="hidden"

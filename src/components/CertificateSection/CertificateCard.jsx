@@ -43,7 +43,7 @@ const CertificateCard = ({ cert, index }) => {
 
         <p className="text-sm text-lightGrey mb-1">
           Issued by:{" "}
-          <span className="text-cyan-400 font-medium">{cert.issuer}</span>
+          <span className="text-[#ADD8E6] font-medium">{cert.issuer}</span>
         </p>
 
         <p className="text-xs text-orange-300 italic">{cert.date}</p>

@@ -1,42 +1,38 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { FiSend } from "react-icons/fi";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [success, setSuccess] = useState("");
-  const form = useRef();
+  const formRef = useRef(null);
 
-  const handleName = (e) => setName(e.target.value);
-  const handleEmail = (e) => setEmail(e.target.value);
-  const handleMessage = (e) => setMessage(e.target.value);
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default page reload
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const formData = new FormData(formRef.current);
 
-    emailjs
-      .sendForm("service_ko3hmpt", "template_ahbmmqd", form.current, {
-        publicKey: "I6HAT5mUZH7WHabGE",
-      })
-      .then(
-        () => {
-          setSuccess("✅ Message sent successfully!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-          setSuccess("❌ Failed to send message. Try again later.");
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/ajax/aherkaustubh166@gmail.com",
+        {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
         }
-      )
-      .finally(() => {
-        // Clear inputs regardless of success/failure
-        setEmail("");
-        setName("");
-        setMessage("");
+      );
+
+      if (response.ok) {
+        setSuccess("✅ Message sent successfully!");
+        formRef.current.reset(); // clear inputs
         setTimeout(() => setSuccess(""), 4000);
-      });
+      } else {
+        setSuccess("❌ Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      setSuccess("❌ An error occurred. Please try again.");
+    }
   };
 
   return (
@@ -52,37 +48,37 @@ const ContactForm = () => {
           {success}
         </p>
       )}
+
       <form
-        ref={form}
-        onSubmit={sendEmail}
+        ref={formRef}
         className="flex flex-col gap-5 w-full"
+        onSubmit={handleSubmit}
       >
+        {/* Hidden input to disable captcha */}
+        <input type="hidden" name="_captcha" value="false" />
+
         <input
           type="text"
-          name="from_name"
+          name="name"
           placeholder="Your Name"
           required
           className="h-12 px-4 rounded-lg bg-[#2c2c2c] text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition"
-          value={name}
-          onChange={handleName}
         />
+
         <input
           type="email"
-          name="from_email"
+          name="email"
           placeholder="Your Email"
           required
           className="h-12 px-4 rounded-lg bg-[#2c2c2c] text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition"
-          value={email}
-          onChange={handleEmail}
         />
+
         <textarea
           name="message"
           rows="6"
           placeholder="Write your message..."
           required
           className="p-4 rounded-lg bg-[#2c2c2c] text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 transition"
-          value={message}
-          onChange={handleMessage}
         ></textarea>
 
         <button

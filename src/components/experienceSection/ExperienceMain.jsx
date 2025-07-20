@@ -35,7 +35,7 @@ const ExperienceSection = () => {
   return (
     <section
       id="experience"
-      className="bg-gradient-to-br from-[#0f172a] via-[#1a1a1a] to-[#0a0a0a] py-20 px-6 text-white"
+      className="bg-gradient-to-br from-[#0f172a] via-[#1a1a1a] to-[#0a0a0a] py-20 px-6 text-white cursor-default"
     >
       <div className="max-w-7xl mx-auto">
         {/* Title & Description Centered */}

@@ -6,7 +6,7 @@ const CertificateSection = () => {
   return (
     <section
       id="certificates"
-      className="py-20 px-6 bg-gradient-to-br from-[#1e1b1b] via-[#161616] to-[#0c0c0c] text-white"
+      className="py-20 px-6 bg-gradient-to-br from-[#1e1b1b] via-[#161616] to-[#0c0c0c] text-white cursor-default"
     >
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
@@ -14,7 +14,7 @@ const CertificateSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-500 mb-6 font-customSerif text-orange"
+          className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text mb-6 font-customSerif text-orange"
         >
           Certifications
         </motion.h2>
