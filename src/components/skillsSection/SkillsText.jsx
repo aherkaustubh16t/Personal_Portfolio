@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
-import img from "../../../public/images/skills.avif";
+import img from "/images/skills.avif"; // Or use "/images/skills.avif" if in public folder
 
 const SkillsText = () => {
   return (
     <motion.div
-      className="text-center flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-10 px-4"
+      className="text-center flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10 px-4"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true, amount: 0.3 }}
     >
       {/* Text Section */}
-      <div className="sm:w-2/3">
+      <div className="md:w-2/3">
         <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text text-orange font-customSerif">
           MY SKILLS
         </h2>
@@ -28,12 +28,13 @@ const SkillsText = () => {
         </p>
       </div>
 
-      {/* Image Section */}
-      <div className="sm:w-1/3 hidden sm:block">
+      {/* Image Section - Visible only on md and up */}
+      <div className="hidden md:block md:w-1/3">
         <img
           src={img}
           alt="Skills Illustration"
           className="w-full h-auto rounded-xl"
+          loading="lazy"
         />
       </div>
     </motion.div>
