@@ -1,6 +1,6 @@
 const NavbarLogo = () => {
   return (
-    <div className="w-40 h-20  rounded-full overflow-hidden">
+    <div className="w-40 h-20 flex items-center justify-center rounded-full overflow-hidden">
       <img
         src="/images/logo.png" // Replace with your logo path
         alt="Logo"

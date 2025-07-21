@@ -7,7 +7,7 @@ const links = [
   { link: "DSA", section: "dsa" },
   { link: "Experience", section: "experience" },
   { link: "Projects", section: "projects" },
-  { link: "Contact", section: "contact" },
+  { link: "Contact Me", section: "contact" },
 ];
 
 const NavbarLinks = () => {
