@@ -8,7 +8,6 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { threshold: 0.3 });
 
   return (
     <section id="projects" className="cursor-default">
