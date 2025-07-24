@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import SkillCard from "./SkillCard";
 import SkillsText from "./SkillsText";
 import { skillGroups } from "./skillsData";
@@ -6,9 +6,24 @@ import { motion } from "framer-motion";
 
 const SkillsMain = () => {
   const [openGroupIndex, setOpenGroupIndex] = useState(null);
+  const groupRefs = useRef([]);
 
   const handleToggle = (index) => {
-    setOpenGroupIndex((prevIndex) => (prevIndex === index ? null : index));
+    const isClosing = openGroupIndex === index;
+    setOpenGroupIndex(isClosing ? null : index);
+
+    if (!isClosing) {
+      setTimeout(() => {
+        const element = groupRefs.current[index];
+        if (element) {
+          const top = element.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: top - 130,
+            behavior: "smooth",
+          });
+        }
+      }, 100); // delay to ensure element is rendered before scroll
+    }
   };
 
   return (
@@ -19,6 +34,7 @@ const SkillsMain = () => {
         {skillGroups.map((group, index) => (
           <motion.div
             key={index}
+            ref={(el) => (groupRefs.current[index] = el)}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
