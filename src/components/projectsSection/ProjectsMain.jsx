@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { projects } from "./projectData";
 import CertificateSection from "../CertificateSection/CertificateSection";
