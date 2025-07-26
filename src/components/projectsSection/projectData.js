@@ -78,7 +78,7 @@ export const projects = [
     image: "/images/Projects/excelinvoice.png",
     description:
       "An automated invoice system in Excel using VBA. Calculates totals, applies tax, and exports to PDF. Includes form inputs, auto-invoice numbers, and customer lookup features.",
-    codeLink: "https://github.com/aherkaustubh16t/vba-invoice-generator",
-    liveLink: "https://drive.google.com/file/d/your-demo-link/view",
+    codeLink: "https://github.com/aherkaustubh16t/Excel-Invoice-Generator-VBA",
+    liveLink: "https://github.com/aherkaustubh16t/Excel-Invoice-Generator-VBA/tree/main/Assets",
   },
 ];
