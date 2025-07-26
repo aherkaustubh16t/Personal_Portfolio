@@ -12,7 +12,7 @@ const links = [
 
 const NavbarLinks = () => {
   return (
-    <ul className="flex lg:flex-row sm:flex-col sm:rounded-3xl gap-6 border sm:border-black md:text-xl text-[#F5F5DC] font-body lg:relative sm:absolute sm:top-[120%] text-center sm:left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:gap-6 sm:py-5 bg-black backdrop-blur-lg md:py-4 sm:w-full">
+    <ul className="flex lg:flex-row sm:flex-col justify-center items-center sm:rounded-3xl gap-6 border sm:border-black md:text-xl text-[#F5F5DC] font-body lg:relative sm:absolute sm:top-[120%] text-center sm:left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:gap-6 sm:py-5 bg-black backdrop-blur-lg md:py-4 sm:w-full">
       {links.map((link, index) => (
         <li key={index} className="group">
           <Link
@@ -22,7 +22,7 @@ const NavbarLinks = () => {
             smooth={true}
             duration={500}
             offset={-130}
-            className="cursor-pointer text-[#F5F5DC] hover:text-orange transition-all duration-500"
+            className="cursor-pointer py-4 text-[#F5F5DC] hover:text-orange transition-all duration-500"
           >
             {link.link}
           </Link>
