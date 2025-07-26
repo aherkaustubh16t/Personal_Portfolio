@@ -12,7 +12,7 @@ const links = [
 
 const NavbarLinks = () => {
   return (
-    <ul className="flex lg:flex-row sm:flex-col sm:rounded-3xl gap-6 border sm:border-black md:text-xl text-white font-body lg:relative sm:absolute sm:top-[120%] text-center sm:left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:gap-6  sm:py-5 sm:bg-[#002D62]/90 backdrop-blur-lg lg:bg-black md:py-4 sm:w-full">
+    <ul className="flex lg:flex-row sm:flex-col sm:rounded-3xl gap-6 border sm:border-black md:text-xl text-[#F5F5DC] font-body lg:relative sm:absolute sm:top-[120%] text-center sm:left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:gap-6 sm:py-5 bg-black backdrop-blur-lg md:py-4 sm:w-full">
       {links.map((link, index) => (
         <li key={index} className="group">
           <Link
@@ -22,11 +22,11 @@ const NavbarLinks = () => {
             smooth={true}
             duration={500}
             offset={-130}
-            className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
+            className="cursor-pointer text-[#F5F5DC] hover:text-orange transition-all duration-500"
           >
             {link.link}
           </Link>
-          <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[2px] transition-all duration-500 active-underline"></div>
+          <div className="mx-auto bg-orange w-0 group-hover:w-full h-[2px] transition-all duration-500 active-underline"></div>
         </li>
       ))}
     </ul>
