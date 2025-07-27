@@ -20,7 +20,7 @@ const AboutMeMain = () => {
         </p>
       </div>
 
-      {/* About Me Content */}
+      {/* About Me  */}
       <div className="flex md:flex-row sm:flex-col gap-12 max-w-[1200px] mx-auto items-center">
         {/* Text Section */}
         <motion.div
