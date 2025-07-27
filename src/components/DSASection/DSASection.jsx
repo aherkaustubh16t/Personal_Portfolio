@@ -48,7 +48,7 @@ const DSASection = () => {
         <p className="text-lg text-white mt-6 max-w-3xl mx-auto">
           I regularly practice Data Structures and Algorithms to strengthen my
           problem-solving skills. I've solved{" "}
-          <span className="text-yellow-400 font-semibold">300+ problems</span>{" "}
+          <span className="text-yellow-400 font-semibold">350+ problems</span>{" "}
           across platforms like LeetCode and CodeChef, and actively participate
           in contests to challenge myself.
         </p>
