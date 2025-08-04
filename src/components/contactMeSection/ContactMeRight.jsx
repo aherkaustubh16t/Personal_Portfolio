@@ -7,7 +7,7 @@ const ContactMeRight = () => {
       <img
         src="/images/email-image.png"
         alt="email image"
-        className="max-w-[300px]"
+        className="max-w-[300px] hidden md:block"
       />
       <ContactInfo />
       <SocialLinks showHireMe={false} />
