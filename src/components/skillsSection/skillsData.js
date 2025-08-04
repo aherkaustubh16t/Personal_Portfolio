@@ -32,8 +32,8 @@ export const skillGroups = [
       {
         name: "HTML",
         Icon: FaHtml5,
-        projectsUsed: 12,
-        experience: "3+ years of semantic, SEO-friendly UI development",
+        projectsUsed: '12+',
+        experience: "Semantic, SEO-friendly UI development",
       },
       {
         name: "CSS",
@@ -46,12 +46,6 @@ export const skillGroups = [
         Icon: IoLogoJavascript,
         projectsUsed: 15,
         experience: "Used extensively in frontend/backend development",
-      },
-      {
-        name: "TypeScript",
-        Icon: SiTypescript,
-        projectsUsed: 4,
-        experience: "Used with React and Node.js for type-safe apps",
       },
       {
         name: "React.js",
@@ -99,12 +93,6 @@ export const skillGroups = [
         Icon: FaJava,
         projectsUsed: 6,
         experience: "OOP-based applications and REST services",
-      },
-      {
-        name: "Python",
-        Icon: SiPython,
-        projectsUsed: 7,
-        experience: "Used for scripting, automation, and basic data analysis",
       },
     ],
   },

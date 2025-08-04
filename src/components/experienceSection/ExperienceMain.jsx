@@ -15,20 +15,20 @@ const experienceData = [
     ],
     tech: ["React", "Node.js", "MongoDB", "GitHub"],
   },
-  {
-    title: "Freelance Full Stack Developer",
-    company: "Sports Club Website",
-    period: "March 2025 – April 2025",
-    type: "Freelance Project",
-    icon: <FaProjectDiagram />,
-    description: [
-      "Built a complete web solution for managing sports events, teams, and announcements.",
-      "Designed responsive UI using React.js and Tailwind CSS.",
-      "Set up backend with Node.js, Express.js & MongoDB.",
-      "Delivered within 3 weeks, deployed on Render/Netlify.",
-    ],
-    tech: ["React", "Tailwind", "MongoDB", "Express", "Node.js", "Render"],
-  },
+  // {
+  //   title: "Freelance Full Stack Developer",
+  //   company: "Sports Club Website",
+  //   period: "March 2025 – April 2025",
+  //   type: "Freelance Project",
+  //   icon: <FaProjectDiagram />,
+  //   description: [
+  //     "Built a complete web solution for managing sports events, teams, and announcements.",
+  //     "Designed responsive UI using React.js and Tailwind CSS.",
+  //     "Set up backend with Node.js, Express.js & MongoDB.",
+  //     "Delivered within 3 weeks, deployed on Render/Netlify.",
+  //   ],
+  //   tech: ["React", "Tailwind", "MongoDB", "Express", "Node.js", "Render"],
+  // },
 ];
 
 const ExperienceSection = () => {
