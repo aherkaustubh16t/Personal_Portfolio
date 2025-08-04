@@ -16,7 +16,7 @@ const FooterMain = () => {
     <footer className="bg-black text-white px-6 sm:px-12 py-10 mt-16">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
         {/* Logo */}
-        <div className="text-2xl font-extrabold tracking-wide">
+        <div className="text-2xl font-extrabold tracking-wide font-customSerif">
           <span className="text-orange ">KAUSTUBH AHER </span>
           Portfolio
         </div>
@@ -31,7 +31,7 @@ const FooterMain = () => {
                 smooth={true}
                 offset={-130}
                 duration={500}
-                className="cursor-pointer hover:text-cyan transition-colors duration-300"
+                className="cursor-pointer hover:text-orange transition-colors duration-300"
               >
                 {label}
               </Link>
