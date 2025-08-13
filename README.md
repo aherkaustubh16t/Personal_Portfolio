@@ -1,4 +1,4 @@
-readme_text_format = """
+
 # PERSONAL_PORTFOLIO
 
 *Showcase Your Brilliance, Inspire Every Visitor*
