@@ -1,5 +1,3 @@
-# Convert the provided plain text into a formatted README.md file
-
 readme_text_format = """
 # PERSONAL_PORTFOLIO
 
