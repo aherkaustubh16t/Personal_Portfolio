@@ -11,7 +11,7 @@ import SkillsMain from "./components/skillsSection/SkillsMain";
 import SubHeroMain from "./components/subHeroSection/SubHeroMain";  
  
 function App() { 
-  return (
+  return ( 
     <main className="font-body text-white relative overflow-hidden select-none"> 
       <NavbarMain />
       <HeroMain />
