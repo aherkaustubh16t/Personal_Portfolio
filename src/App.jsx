@@ -10,7 +10,7 @@ import ProjectsMain from "./components/projectsSection/ProjectsMain";
 import SkillsMain from "./components/skillsSection/SkillsMain";  
 import SubHeroMain from "./components/subHeroSection/SubHeroMain";    
  
-function App() { 
+function App() {  
   return ( 
     <main className="font-body text-white relative overflow-hidden select-none"> 
       <NavbarMain />
