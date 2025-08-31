@@ -3,7 +3,7 @@ import { fadeIn } from "../../framerMotion/variants";
 import { Typewriter } from "react-simple-typewriter";
 import SocialLinks from "./SocialLinks";
  
-const HeroText = () => {
+const HeroText = () => { 
   return ( 
     <div className="flex flex-col pt-10 gap-4 h-full justify-center md:text-left sm:text-center">  
       {/* Greeting */}
