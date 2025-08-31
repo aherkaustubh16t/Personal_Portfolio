@@ -14,7 +14,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl uppercase text-white"
       >
-        Hi, I'm
+        Hi, I'm 
       </motion.h2>
 
       {/* Name */}
