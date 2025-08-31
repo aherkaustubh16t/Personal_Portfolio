@@ -10,6 +10,6 @@ const HeroMain = () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default HeroMain;
