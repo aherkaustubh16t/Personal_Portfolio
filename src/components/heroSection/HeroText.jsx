@@ -9,7 +9,7 @@ const HeroText = () => {
       {/* Greeting */}
       <motion.h2
         variants={fadeIn("down", 0.2)}  
-        initial="hidden"
+        initial="hidden" 
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl uppercase text-white"
