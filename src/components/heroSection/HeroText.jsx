@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
  
 const HeroText = () => {
   return ( 
-    <div className="flex flex-col pt-10 gap-4 h-full justify-center md:text-left sm:text-center">
+    <div className="flex flex-col pt-10 gap-4 h-full justify-center md:text-left sm:text-center"> 
       {/* Greeting */}
       <motion.h2
         variants={fadeIn("down", 0.2)} 
