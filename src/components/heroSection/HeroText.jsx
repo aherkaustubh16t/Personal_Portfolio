@@ -8,7 +8,7 @@ const HeroText = () => {
     <div className="flex flex-col pt-10 gap-4 h-full justify-center md:text-left sm:text-center">
       {/* Greeting */}
       <motion.h2
-        variants={fadeIn("down", 0.2)}
+        variants={fadeIn("down", 0.2)} 
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
