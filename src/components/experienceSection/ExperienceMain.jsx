@@ -3,7 +3,7 @@ import { FaUserTie, FaProjectDiagram } from "react-icons/fa";
 
 const experienceData = [
   {
-    title: "Full Stack Developer Intern",
+    title: "Full Stack Developer Intern", 
     company: "SRW Softwares",
     period: "Jan 2025 – May 2025",
     type: "Internship",
