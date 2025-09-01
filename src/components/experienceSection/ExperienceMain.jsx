@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaUserTie, FaProjectDiagram } from "react-icons/fa";
+import { FaUserTie, FaProjectDiagram } from "react-icons/fa"; 
 
 const experienceData = [
   {
