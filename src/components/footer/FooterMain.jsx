@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import SocialIcons from "../heroSection/SocialIcons";
 
 const footerLinks = [
-  { label: "Home", to: "hero" },
+  { label: "Home", to: "hero" }, 
   { label: "About", to: "about" },
   { label: "Skills", to: "skills" },
   { label: "DSA", to: "dsa" },  
