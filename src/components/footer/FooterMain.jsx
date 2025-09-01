@@ -6,7 +6,7 @@ const footerLinks = [
   { label: "About", to: "about" },
   { label: "Skills", to: "skills" },
   { label: "DSA", to: "dsa" },
-  { label: "Experience", to: "experience" },
+  { label: "Experience", to: "experience" }, 
   { label: "Projects", to: "projects" },
   { label: "Contact", to: "contact" },
 ]; 
