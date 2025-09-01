@@ -6,7 +6,7 @@ const experienceData = [
     title: "Full Stack Developer Intern", 
     company: "SRW Softwares",
     period: "Jan 2025 – May 2025",
-    type: "Internship",
+    type: "Internship", 
     icon: <FaUserTie />,
     description: [
       "Worked on internal tools using React, API integration & RESTful services.",
