@@ -9,7 +9,7 @@ const footerLinks = [
   { label: "Experience", to: "experience" },
   { label: "Projects", to: "projects" },
   { label: "Contact", to: "contact" },
-];
+]; 
 
 const FooterMain = () => {
   return (
