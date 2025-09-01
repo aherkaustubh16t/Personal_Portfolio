@@ -9,7 +9,7 @@ const experienceData = [
     type: "Internship", 
     icon: <FaUserTie />,
     description: [
-      "Worked on internal tools using React, API integration & RESTful services.",
+      "Worked on internal tools using React, API integration & RESTful services.", 
       "Contributed to backend development using Node.js and MongoDB.",
       "Followed agile practices and collaborated via GitHub & JIRA.",
     ],
