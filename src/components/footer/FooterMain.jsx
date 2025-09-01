@@ -8,7 +8,7 @@ const footerLinks = [
   { label: "DSA", to: "dsa" },  
   { label: "Experience", to: "experience" }, 
   { label: "Projects", to: "projects" },
-  { label: "Contact", to: "contact" },
+  { label: "Contact", to: "contact" }, 
 ]; 
 
 const FooterMain = () => {
