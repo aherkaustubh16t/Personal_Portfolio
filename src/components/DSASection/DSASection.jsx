@@ -7,7 +7,7 @@ import { useInView } from "framer-motion";
 const DSASection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { threshold: 0.3 });
-  const controls = useAnimation();
+  const controls = useAnimation(); 
 
   useEffect(() => {
     if (isInView) {
