@@ -78,7 +78,6 @@ const EducationCard = React.memo(({ edu, index }) => {
       variants={cardVariants}
       initial="hidden"
       animate={cardControls}
-      whileHover="hover"
       className="relative"
     >
       {/* Timeline connector */}
