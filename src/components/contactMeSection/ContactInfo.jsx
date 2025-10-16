@@ -6,8 +6,13 @@ import SingleInfo from "./SingleInfo";
 const ContactInfo = () => {
   return (
     <div className="flex flex-col gap-4">
-      {/* Email - plain text (not clickable) */}
-      <SingleInfo text="aherkaustubhramesh16@gmail.com" Image={HiOutlineMail} />
+      {/* Email - now clickable (mailto link) */}
+      <a
+        href="mailto:aherkaustubhramesh16@gmail.com"
+        className="hover:text-orange"
+      >
+        <SingleInfo text="aherkaustubhramesh16@gmail.com" Image={HiOutlineMail} />
+      </a>
 
       {/* Phone - tel link */}
       <a href="tel:+917249734437" className="hover:text-orange">
