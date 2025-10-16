@@ -1,4 +1,4 @@
-stuimport { HiOutlineMail } from "react-icons/hi";
+import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import SingleInfo from "./SingleInfo";
