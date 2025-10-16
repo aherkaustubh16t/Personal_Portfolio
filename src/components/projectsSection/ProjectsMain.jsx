@@ -66,7 +66,7 @@ const ProjectSection = () => {
 
           {/* GitHub Button */}
           <motion.a
-            href="https://github.com/aherkaustubh16t"
+            href="https://github.com/aherkaustubh16t?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center font-bold gap-2 mt-12 px-6 py-3 rounded-full 
