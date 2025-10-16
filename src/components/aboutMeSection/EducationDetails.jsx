@@ -78,6 +78,7 @@ const EducationCard = React.memo(({ edu, index }) => {
       variants={cardVariants}
       initial="hidden"
       animate={cardControls}
+      whileHover="hover"
       className="relative"
     >
       {/* Timeline connector */}
@@ -88,7 +89,8 @@ const EducationCard = React.memo(({ edu, index }) => {
       {/* Timeline dot */}
       <div className="absolute left-5 top-5 w-3 h-3 bg-orange rounded-full z-10 shadow-lg shadow-orange/30" />
       
-      <motion.div  whileHover="hover" className="bg-gradient-to-br from-[#1f1f1f] to-[#2a2a2a] border-l-4 border-orange rounded-xl p-6 shadow-lg max-w-2xl mx-auto mb-8 ml-8 relative overflow-hidden group">
+      {/* Card content - removed duplicate motion props */}
+      <div className="bg-gradient-to-br from-[#1f1f1f] to-[#2a2a2a] border-l-4 border-orange rounded-xl p-6 shadow-lg max-w-2xl mx-auto mb-8 ml-8 relative overflow-hidden group cursor-pointer">
         {/* Background accent */}
         <div className="absolute top-0 right-0 w-20 h-20 bg-orange/5 rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-500" />
         
@@ -157,7 +159,7 @@ const EducationCard = React.memo(({ edu, index }) => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </motion.div>
   );
 });
