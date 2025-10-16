@@ -21,7 +21,7 @@ const ContactInfo = () => {
 
       {/* Location - Google Maps link */}
       <a
-        href="https://www.google.com/maps/search/?api=1&query=Loni"
+        href="https://maps.app.goo.gl/GPaSH2cMgYUa6jq7A"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-orange"
