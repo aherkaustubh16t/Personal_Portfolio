@@ -7,7 +7,7 @@ import HeroGradient from "./components/heroSection/HeroGradient";
 import HeroMain from "./components/heroSection/HeroMain";          
 import NavbarMain from "./components/navbar/NavbarMain";       
 import ProjectsMain from "./components/projectsSection/ProjectsMain";     
-import SkillsMain from "./components/skillsSection/SkillsMain";  
+import SkillsMain from "./components/skillsSection/SkillsMain";   
 import SubHeroMain from "./components/subHeroSection/SubHeroMain";    
  
 function App() {  
