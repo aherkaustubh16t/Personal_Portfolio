@@ -17,7 +17,7 @@ const FooterMain = () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
         {/* Logo */}
         <div className="text-2xl font-extrabold tracking-wide font-customSerif">
-          <span className="text-orange ">KAUSTUBH AHER </span>
+          <span className="text-orange ">Kaustubh Aher </span>
           Portfolio
         </div>
 
