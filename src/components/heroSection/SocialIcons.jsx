@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram,  FaChessKnight } from "react-icons/fa";
 import { SiLeetcode, SiCodechef } from "react-icons/si";
 import { fadeIn } from "../../framerMotion/variants"; // adjust the path as needed
 
@@ -17,12 +17,6 @@ const links = [
     color: "text-blue-500",
   },
   {
-    href: "https://www.instagram.com/aher_kaustubh_16/",
-    label: "Instagram",
-    icon: <FaInstagram />,
-    color: "text-pink-500",
-  },
-  {
     href: "https://leetcode.com/u/aherkaustubh16t/",
     label: "LeetCode",
     icon: <SiLeetcode />,
@@ -33,6 +27,18 @@ const links = [
     label: "CodeChef",
     icon: <SiCodechef />,
     color: "text-purple-500",
+  },
+  {
+    href: "https://www.chess.com/member/aherkaustubh16",
+    label: "Chess.com",
+    icon: <FaChessKnight />,
+    color: "text-green-500",
+  },
+  {
+    href: "https://www.instagram.com/aher_kaustubh_16/",
+    label: "Instagram",
+    icon: <FaInstagram />,
+    color: "text-pink-500",
   },
 ];
 
